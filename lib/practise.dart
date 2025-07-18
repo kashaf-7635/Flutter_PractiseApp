@@ -1,22 +1,22 @@
-// import 'dart:io';
+import 'dart:io';
 
 void main() {
-  // print('Hello Dart!');
+  print('Hello Dart!');
 
-  // stdout.write('Enter your name:');
-  // var name = stdin.readLineSync();
-  // print("Welcome, $name");
+  stdout.write('Enter your name:');
+  var name = stdin.readLineSync();
+  print("Welcome, $name");
 
   // Human();
 
-  //Variables
+  // Variables
   // int a;
   // a = 5;
   // print(a);
-  //
+
   // String userName = "Kashaf";
   // print(userName);
-  //
+
   // BigInt longValue;
   // longValue = BigInt.parse('1217261637153126457125461464');
   // print(longValue);
@@ -42,12 +42,12 @@ void main() {
 
   // var myC = myClass();
   // myC.greetUser('Kashaf Ansari');
-  //
+
   // print(myC.addition(3, 4));
 
   //   var listNames = [10, 20, 30];
   //   listNames.add(50);
-  //
+
   //   var names =[];
   //   names.add("Kashaf");
   //   names.add("Ansari");
@@ -55,7 +55,7 @@ void main() {
   // names.insert(2, 100);
   //   names[1] = "Niaz";
   //   print(names);
-  //
+
   //   names.replaceRange(0, 2 , ["Niaz", "Ahmed"]);
   //   print(names);
 
@@ -81,7 +81,7 @@ void main() {
   //   'Key3':3.0,
   //   'Key4':true
   // };
-  //
+
   // print(new_map['key2']);
   // print(new_map.isNotEmpty);
   // print(new_map.isEmpty);
@@ -94,20 +94,20 @@ void main() {
   // print(new_map);
 
   //   final String name ="Kashaf"; // can't reassign
-  //
+
   // const name2 = "Kashaf";
 }
 
 // class myClass {
-//   myClass(){
+//   myClass() {
 //     print('myClass object Created!');
 //   }
-//
-//   void greetUser(String name){
+
+//   void greetUser(String name) {
 //     print("Welcome ${name}");
 //   }
-//
-//   int addition(int a, int b){
-//     return a+b;
+
+//   int addition(int a, int b) {
+//     return a + b;
 //   }
 // }
