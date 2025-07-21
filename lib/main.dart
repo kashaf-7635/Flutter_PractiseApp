@@ -7,6 +7,8 @@ void main() {
 }
 
 class FlutterApp extends StatelessWidget {
+  const FlutterApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,6 +30,8 @@ class FlutterApp extends StatelessWidget {
 }
 
 class DashboardScreen extends StatefulWidget {
+  const DashboardScreen({super.key});
+
   @override
   _DashboardScreenState createState() => _DashboardScreenState();
 }
@@ -55,7 +59,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     var queryText = TextEditingController();
     var time = DateTime.now();
 
-    void _updateTime() {
+    void updateTime() {
       setState(() {
         time = DateTime.now();
       });
@@ -99,7 +103,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 Expanded(
                   flex: 1,
                   child: TextButton(
-                    onPressed: _updateTime,
+                    onPressed: updateTime,
                     child: Text(
                       'Get Current Time!',
                       style: TextStyle(color: Colors.deepOrange),
@@ -147,7 +151,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ElevatedButton(
                   onPressed: () {
                     String query = queryText.text.toString();
-                    print('$query');
+                    print(query);
                   },
                   child: Text(
                     'Get Query!',
@@ -192,7 +196,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         timeSelected =
                             '${timePicked.hour}:${timePicked.minute}';
 
-                        print('TimeSelected: ${timePicked}');
+                        print('TimeSelected: $timePicked');
                       });
                     }
                   },

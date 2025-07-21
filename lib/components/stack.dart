@@ -3,11 +3,14 @@ import 'package:myapp/ui_helper/util.dart';
 import 'package:myapp/widgets/rounded_button.dart';
 
 class StackCmp extends StatelessWidget {
+  const StackCmp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 250,
-      height: 250,
+      width: double.infinity,
+      height: 300,
+      color: Colors.red,
       child: Stack(
         children: [
           Container(width: 200, height: 200, color: Colors.blueGrey),

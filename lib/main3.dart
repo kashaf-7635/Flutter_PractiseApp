@@ -7,12 +7,15 @@ import 'package:myapp/components/stack.dart';
 import 'package:myapp/components/tabs.dart';
 import 'package:myapp/components/wrap.dart';
 import 'package:myapp/ui_helper/util.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyFirstApp());
 }
 
 class MyFirstApp extends StatelessWidget {
+  const MyFirstApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,6 +27,8 @@ class MyFirstApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -54,14 +59,55 @@ class _HomePageState extends State<MyHomePage> {
           child: Column(
             children: [
               HeaderCmp(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    margin: const EdgeInsets.only(top: 8.0, bottom: 9.0),
-                    child: Text('Discover', style: headingTextStyle()),
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.all(11.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: RichText(
+                        text: TextSpan(
+                          style: TextStyle(
+                            color: Colors.pink,
+                            fontSize: 21,
+                            fontWeight: FontWeight.w500,
+                          ),
+                          children: [
+                            TextSpan(text: ' Welcome to '),
+                            TextSpan(
+                              text: 'Flutter ',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 34,
+                                color: Colors.orange,
+                                fontStyle: FontStyle.italic,
+                                fontFamily: 'FontMain',
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Icon(
+                            Icons.headset_mic_rounded,
+                            size: 30,
+                            color: Colors.pink,
+                          ),
+                          SizedBox(width: 5),
+                          FaIcon(
+                            FontAwesomeIcons.flutter,
+                            size: 27,
+                            color: Colors.pink,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
 
               TabCmp(),

@@ -8,7 +8,8 @@ class RoundedButton extends StatelessWidget {
   final TextStyle? textStyle;
   final VoidCallback? callBack;
 
-  RoundedButton({
+  const RoundedButton({
+    super.key,
     required this.btnName,
     this.bgColor = Colors.blue,
     this.textStyle,
@@ -18,7 +19,7 @@ class RoundedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 150,
       child: ElevatedButton(
         onPressed: callBack,

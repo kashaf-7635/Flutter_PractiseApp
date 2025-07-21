@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HeaderCmp extends StatelessWidget {
+  const HeaderCmp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(

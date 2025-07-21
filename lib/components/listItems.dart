@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:myapp/ui_helper/util.dart';
 
 class ListItemsCmp extends StatelessWidget {
+  const ListItemsCmp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,7 +24,7 @@ class ListItemsCmp extends StatelessWidget {
             ],
           ),
 
-          Container(
+          SizedBox(
             height: 100,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -35,11 +37,11 @@ class ListItemsCmp extends StatelessWidget {
                         margin: EdgeInsets.only(left: 20, right: 20),
                         height: 50,
                         width: 50,
-                        child: Icon(Icons.games, color: Colors.pink),
                         decoration: BoxDecoration(
                           color: Colors.grey.shade300,
                           borderRadius: BorderRadius.circular(20),
                         ),
+                        child: Icon(Icons.games, color: Colors.pink),
                       ),
                       Text('Balloting'),
                     ],

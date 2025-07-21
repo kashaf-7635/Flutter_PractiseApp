@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:myapp/ui_helper/util.dart';
 
 class GalleryCmp extends StatelessWidget {
+  const GalleryCmp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(

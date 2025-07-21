@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:myapp/ui_helper/util.dart';
 
 class WrapCmp extends StatelessWidget {
+  const WrapCmp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Wrap(

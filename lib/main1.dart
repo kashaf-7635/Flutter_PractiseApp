@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/ui_helper/util.dart';
-import 'package:intl/intl.dart';
 
 void main() {
   runApp(const MyApp());

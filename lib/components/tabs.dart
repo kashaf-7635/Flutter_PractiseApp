@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:myapp/ui_helper/util.dart';
 
 class TabCmp extends StatelessWidget {
+  const TabCmp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Row(
