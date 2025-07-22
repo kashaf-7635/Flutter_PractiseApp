@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:myapp/screens/home_screen.dart';
 
 class IntroScreen extends StatelessWidget {
-  var nameFromHome;
+  final nameFromHome;
 
   IntroScreen(this.nameFromHome);
   @override

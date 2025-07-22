@@ -1,14 +1,19 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:myapp/screens/3dlist_screen.dart';
+import 'package:myapp/screens/clip_rrect.dart';
 import 'package:myapp/screens/input_screen.dart';
 import 'package:myapp/screens/intro_screen.dart';
+import 'package:myapp/screens/ripple_effect_animation.dart';
+import 'package:myapp/screens/tween_animation.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenState extends State<SplashScreen>
+    with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
@@ -16,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => InputScreen()),
+        MaterialPageRoute(builder: (context) => RippleEffectAnimation()),
       );
     });
   }
